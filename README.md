@@ -1,8 +1,8 @@
 # JSserialtool
 
-Listen serialport
-Listen and collect data from serialport to file
-Listen and scan serialport data with different port configuration options to file
+1. Listen serialport
+2. Listen and collect data from serialport to file
+3. Listen and scan serialport data with different port configuration options to file
 
 ## How to use
 
