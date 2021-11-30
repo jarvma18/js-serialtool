@@ -105,5 +105,6 @@ dist
 
 collector-files/
 scanner-files/
+scanner-completed-files/
 
 package-lock.json
