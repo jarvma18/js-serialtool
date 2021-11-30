@@ -1,5 +1,9 @@
 # JSserialtool
 
+Listen serialport
+Listen and collect data from serialport to file
+Listen and scan serialport data with different port configuration options to file
+
 ## How to use
 
 1. npm install
