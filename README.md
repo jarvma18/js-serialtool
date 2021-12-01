@@ -76,7 +76,7 @@ TEST_PORT_PATH=/dev/pts/2 PORT=/dev/pts/3 BAUD=9600 PARITY=none DATABITS=8 STOPB
 
 TEST_PORT_PATH=/dev/pts/2 PORT=/dev/pts/3 BAUD=9600 PARITY=none DATABITS=8 STOPBITS=1 MODE=collect FORMAT=ascii node index.js
 
-TEST_PORT_PATH=/dev/pts/2 PORT=/dev/pts/3 BAUD=9600 PARITY=none DATABITS=8 STOPBITS=1 MODE=scan FORMAT=ascii node index.js
+TEST_PORT_PATH=/dev/pts/2 PORT=/dev/pts/3 MODE=scan FORMAT=ascii node index.js
 
 ## TODO
 
