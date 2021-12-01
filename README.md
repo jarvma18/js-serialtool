@@ -12,7 +12,7 @@
 ## Process env variables
 
 1. process.env.PORT
-  (path to serialport)\
+  (path to serialport)
 2. process.env.BAUD
   (baud rate for serial connection, valid baud rates are 75, 110, 300, 1200, 2400, 4800, 9600, 19200, 38400, 57600, 115200)
 3. process.env.PARITY
@@ -38,6 +38,10 @@
   (path to test serialport to write)
 12. process.env.TESTING_DATA
   (text to write from test serialport to listener (default is 'Hello serialport!'))
+13. process.env.PARSER
+  (define parser to use in collecting data (supporting bytelength))
+14. process.env.BYTE_LENGTH
+  (define length of data from port when using bytelength as parser)
 
 ## Example commands
 
@@ -49,7 +53,9 @@
 
 4. PORT=/dev/ttyS0 BAUD=9600 PARITY=none DATABITS=8 STOPBITS=1 MODE=collect FORMAT=ascii node index.js
 
-5. PORT=/dev/ttyS0 BAUD=9600 PARITY=none DATABITS=8 STOPBITS=1 MODE=scan FORMAT=ascii node index.js
+5. PORT=/dev/ttyS0 MODE=scan FORMAT=ascii node index.js
+
+6. PORT=/dev/ttyS0 BAUD=9600 PARITY=none DATABITS=8 STOPBITS=1 MODE=listen PARSER=bytelength BYTE_LENGTH=10 FORMAT=ascii node index.js
 
 ## How to test with virtual serial ports in Linux
 
