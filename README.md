@@ -5,12 +5,12 @@
 3. Listen and scan serialport data with different port configuration options to file
 
 ## How to use
-``
+```
 1. npm install
 2. <process.env variables here> node index.js
-``
+```
 ## Process env variables
-``
+```
 1. process.env.PORT
   (path to serialport)
 2. process.env.BAUD
@@ -42,9 +42,9 @@
   (define parser to use in collecting data (supporting bytelength))
 14. process.env.BYTE_LENGTH
   (define length of data from port when using bytelength as parser)
-``
+```
 ## Example commands
-``
+```
 1. PORT=/dev/ttyS0 BAUD=9600 PARITY=none DATABITS=8 STOPBITS=1 node index.js
 
 2. PORT=/dev/ttyS0 BAUD=9600 PARITY=none DATABITS=8 STOPBITS=1 MODE=listen FORMAT=ascii node index.js
@@ -56,9 +56,9 @@
 5. PORT=/dev/ttyS0 MODE=scan FORMAT=ascii node index.js
 
 6. PORT=/dev/ttyS0 BAUD=9600 PARITY=none DATABITS=8 STOPBITS=1 MODE=listen PARSER=bytelength BYTE_LENGTH=10 FORMAT=ascii node index.js
-``
+```
 ## How to test with virtual serial ports in Linux
-``
+```
 1. Install socat: https://www.redhat.com/sysadmin/getting-started-socat
 2. In terminal: socat -d -d pty,raw,echo=0 pty,raw,echo=0
 
@@ -77,10 +77,10 @@ TEST_PORT_PATH=/dev/pts/2 PORT=/dev/pts/3 BAUD=9600 PARITY=none DATABITS=8 STOPB
 TEST_PORT_PATH=/dev/pts/2 PORT=/dev/pts/3 BAUD=9600 PARITY=none DATABITS=8 STOPBITS=1 MODE=collect FORMAT=ascii node index.js
 
 TEST_PORT_PATH=/dev/pts/2 PORT=/dev/pts/3 MODE=scan FORMAT=ascii node index.js
-``
+```
 ## TODO
-``
+```
 1. Testing
 2. Testing
 3. Testing
-``
+```
